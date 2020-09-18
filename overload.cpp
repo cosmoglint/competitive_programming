@@ -9,35 +9,21 @@ struct Poin {
     y = yyy;
   }
 
-  // bool operator<(const Point &q){
-  //   if (x != p.x) return x < p.x;
-  //   else return y < p.y;
-  // }
+  bool operator<(const Poin &q){
+    if (x != q.x) return x < q.x;
+    else return y < q.y;
+  }
+
+  Poin operator+(const Poin &q){
+    return Poin(x+q.x,y+q.y);
+  }
 };
 
 int main(){
   struct Poin p1 = Poin(3,2);
-  // struct Point p2 = Point(5,3);
-  // struct Poin p1 = {3,4};
-  // cout << (p1<p2);
-  cout << p1.x;
+  struct Poin p2 = Poin(5,3);
+  cout << (p1<p2);
+  Poin p3 = p1 + p2;
+  cout << p3.x << " "<< p3.y;
+
 }
-
-
-// #include <iostream>
-// using namespace std;
-//  struct Rectangle    {
-//    int width, height;
-//   Rectangle(int w, int h)
-//     {
-//         width = w;
-//         height = h;
-//     }
-//   void areaOfRectangle() {
-//     cout<<"Area of Rectangle is: "<<(width*height); }
-//  };
-// int main(void) {
-//     struct Rectangle rec=Rectangle(4,6);
-//     rec.areaOfRectangle();
-//    return 0;
-// }
