@@ -22,7 +22,8 @@ struct Poin {
 int main(){
   struct Poin p1 = Poin(3,2);
   struct Poin p2 = Poin(5,3);
-  cout << (p1<p2);
+  cout << p1.x << " " << p2.y << "\n";
+  cout << (p1<p2) << "\n";
   Poin p3 = p1 + p2;
   cout << p3.x << " "<< p3.y;
 
