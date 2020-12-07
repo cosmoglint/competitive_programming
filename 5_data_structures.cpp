@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <set>
 
 using namespace std;
 
@@ -12,6 +13,7 @@ int main(){
     cout << v[0] << "\n"; // prints first element
     cout << *v.begin() << "\n"; // this also prints the first number but with pointer
 
+    v.pop_back();  //removes last element
     for (int i=0; i < v.size(); i++){  // iterating the vector
       cout << v[i] << " ";
     }
