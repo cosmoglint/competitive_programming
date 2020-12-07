@@ -13,7 +13,7 @@ int main(){
   reverse(v.begin(),v.end());
   shuffle(v.begin(),v.end(), default_random_engine(seed));  // this is part of algorithm module
 
-  for (auto i=v.begin(); i<v.end(); i++){
+  for (auto i=v.begin(); i!=v.end(); i++){
     cout << *i << " ";
   }
 }
