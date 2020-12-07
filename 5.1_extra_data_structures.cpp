@@ -1,13 +1,29 @@
 #include <iostream>
 #include <bitset>
 #include <queue>
+#include <stack>
 
 using namespace std;
 
 int main(){
 
-  //stack
+  //deque
+  deque<int> dq;
+  dq.push_back(4);
+  dq.push_front(7);
+  dq.push_back(8);
+  cout << dq.front() << "\n";
 
+
+  //stack
+  stack<int> st;
+  st.push(5);
+  st.push(4);
+  st.push(10);
+  st.push(2);
+  cout << st.top() << "\n"; // 2
+  st.pop();
+  cout << st.top() << "\n"; // 10
 
   //queue
   queue<int> q;
