@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <set>
+#include <map>
 
 using namespace std;
 
@@ -36,4 +37,13 @@ int main(){
     cout << s.count(4) << "\n"; // prints 0 because 4 is not present
     s.erase(5);
     s.size(); // 2
+
+
+    //maps
+    map<string,int> m;
+    m["hello!"] = 10;
+    m["gg"] = 2;
+    cout << m.count("gg") << "\n"; // 1 key exists
+    cout << m.count("there?") << "\n"; // 0 doesnt exist
+    cout << m["check"] << "\n"; // prints default value for int 0
 }
