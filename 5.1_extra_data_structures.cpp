@@ -1,9 +1,19 @@
 #include <iostream>
-
+#include <bitset>
+#include <queue>
 
 using namespace std;
 
 int main(){
+
+  //queue
+  queue<int> q;
+  q.push(3);
+  q.push(5);
+  q.push(2);
+  cout << q.front() << "\n"; // returns 3
+  q.pop();
+  cout << q.front() << "\n"; // returns 5
 
   //bitset
   bitset<5> bs;
