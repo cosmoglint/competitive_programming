@@ -6,6 +6,9 @@ using namespace std;
 
 int main(){
 
+  //stack
+
+
   //queue
   queue<int> q;
   q.push(3);
@@ -14,6 +17,18 @@ int main(){
   cout << q.front() << "\n"; // returns 3
   q.pop();
   cout << q.front() << "\n"; // returns 5
+
+  //priority queue
+  priority_queue<int> pq;
+  pq.push(3);
+  pq.push(7);
+  pq.push(5);
+  pq.push(1);
+  cout << pq.top() << "\n"; // returns 7 because its larger and has more priority
+  pq.pop(); // this pops 7
+  cout << pq.top() << "\n"; // 5
+  pq.push(6);
+  cout << pq.top() << "\n"; // 6
 
   //bitset
   bitset<5> bs;
