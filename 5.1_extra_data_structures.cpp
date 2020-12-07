@@ -13,6 +13,8 @@ int main(){
   dq.push_front(7);
   dq.push_back(8);
   cout << dq.front() << "\n";
+  dq.pop_front();
+  cout << dq.front() << "\n";
 
 
   //stack
