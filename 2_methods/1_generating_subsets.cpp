@@ -5,7 +5,7 @@ using namespace std;
 
 
 vector<int> subset;
-int n = 3;
+int n = 5;
 
 void printer(vector<int> v){
   for (int i=0; i<v.size(); i++){
